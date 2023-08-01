@@ -1,5 +1,6 @@
 .cabecalho{
     background-color: var(--fundo-azul);
+    margin:0;
 }
 
 .container{
@@ -14,19 +15,30 @@
 
 
 .container__titulo, .container__imagem, .container__frase{
-    padding: 1em;
+    padding: 0.1em;
     color: white;
 }
 
 .container__titulo, .container__frase{
     display: none;
 }
-
-.orientacao{
-    font-size: 30px;
-    font-weight: 500;
-    color: var(--lilas);
+.cx-texto{
+    display: flex;
+    justify-content: center;
 }
+.orientacao3{
+    display:block;
+    font-size: 30px;
+    color: orangered;
+    border: 3px solid white;
+    margin-top: 3em; 
+    padding: 1em;
+ 
+}
+.orientacao, .orientacao2{
+    display: none;
+}
+
 
 @media  screen and (min-width: 820px) {
     .container__titulo{
@@ -36,6 +48,20 @@
 
     .container__titulo{
         font-weight: 400;
+    }
+
+    .orientacao2{
+        display:block;
+        font-size: 30px;
+        color: white;
+        border: 3px solid black;
+        margin-top: 3em; 
+        padding: 1em;
+     
+    }
+
+    .orientacao, .orientacao3{
+        display: none;
     }
 }
 
@@ -49,5 +75,18 @@
         font-weight: 400;
         padding-left: 5em;
     }
+    .orientacao{
+        display: block;
+        font-size: 30px;
+        color: var(--lilas);
+        border: 3px solid greenyellow;
+        margin-top: 3em; 
+        padding: 1em;
+     
+    }
+    .orientacao2, .orientacao3{
+        display: none;
+    }
+
 }
 
